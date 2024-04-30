@@ -45,7 +45,7 @@ class Maze
             return false;
         
         // Seen
-        var isSeen = Seen.Exists(p => p.X == currPoint.X && p.Y == currPoint.Y); // Utilizar IComparer para comparar pontos 
+        var isSeen = Seen.Exists(p => p == currPoint);  
         if (isSeen)
             return false;
         
